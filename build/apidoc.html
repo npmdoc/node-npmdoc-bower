@@ -1,0 +1,2590 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api-documentation for
+    <a
+        
+        href="http://bower.io"
+        
+    >bower (v1.8.0)</a>
+</h1>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower">module bower</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.help">
+            function <span class="apidocSignatureSpan">bower.</span>commands.help
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.home">
+            function <span class="apidocSignatureSpan">bower.</span>commands.home
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.info">
+            function <span class="apidocSignatureSpan">bower.</span>commands.info
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.init">
+            function <span class="apidocSignatureSpan">bower.</span>commands.init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.install">
+            function <span class="apidocSignatureSpan">bower.</span>commands.install
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.link">
+            function <span class="apidocSignatureSpan">bower.</span>commands.link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.list">
+            function <span class="apidocSignatureSpan">bower.</span>commands.list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.login">
+            function <span class="apidocSignatureSpan">bower.</span>commands.login
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.lookup">
+            function <span class="apidocSignatureSpan">bower.</span>commands.lookup
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.prune">
+            function <span class="apidocSignatureSpan">bower.</span>commands.prune
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.register">
+            function <span class="apidocSignatureSpan">bower.</span>commands.register
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.search">
+            function <span class="apidocSignatureSpan">bower.</span>commands.search
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.uninstall">
+            function <span class="apidocSignatureSpan">bower.</span>commands.uninstall
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.unregister">
+            function <span class="apidocSignatureSpan">bower.</span>commands.unregister
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.update">
+            function <span class="apidocSignatureSpan">bower.</span>commands.update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.version">
+            function <span class="apidocSignatureSpan">bower.</span>commands.version
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.reset">
+            function <span class="apidocSignatureSpan">bower.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.</span>abbreviations</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.</span>commands</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.</span>commands.cache</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.</span>config</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.</span>renderers</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">bower.</span>version</span>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands">module bower.commands</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.help">
+            function <span class="apidocSignatureSpan">bower.commands.</span>help
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.home">
+            function <span class="apidocSignatureSpan">bower.commands.</span>home
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.info">
+            function <span class="apidocSignatureSpan">bower.commands.</span>info
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.init">
+            function <span class="apidocSignatureSpan">bower.commands.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.install">
+            function <span class="apidocSignatureSpan">bower.commands.</span>install
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.link">
+            function <span class="apidocSignatureSpan">bower.commands.</span>link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.list">
+            function <span class="apidocSignatureSpan">bower.commands.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.login">
+            function <span class="apidocSignatureSpan">bower.commands.</span>login
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.lookup">
+            function <span class="apidocSignatureSpan">bower.commands.</span>lookup
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.prune">
+            function <span class="apidocSignatureSpan">bower.commands.</span>prune
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.register">
+            function <span class="apidocSignatureSpan">bower.commands.</span>register
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.search">
+            function <span class="apidocSignatureSpan">bower.commands.</span>search
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.uninstall">
+            function <span class="apidocSignatureSpan">bower.commands.</span>uninstall
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.unregister">
+            function <span class="apidocSignatureSpan">bower.commands.</span>unregister
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.update">
+            function <span class="apidocSignatureSpan">bower.commands.</span>update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.version">
+            function <span class="apidocSignatureSpan">bower.commands.</span>version
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.commands.</span>cache</span>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.cache">module bower.commands.cache</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.cache.clean">
+            function <span class="apidocSignatureSpan">bower.commands.cache.</span>clean
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.cache.list">
+            function <span class="apidocSignatureSpan">bower.commands.cache.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.help">module bower.commands.help</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.help.help">
+            function <span class="apidocSignatureSpan">bower.commands.</span>help
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.help.line">
+            function <span class="apidocSignatureSpan">bower.commands.help.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.home">module bower.commands.home</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.home.home">
+            function <span class="apidocSignatureSpan">bower.commands.</span>home
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.home.line">
+            function <span class="apidocSignatureSpan">bower.commands.home.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.info">module bower.commands.info</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.info.info">
+            function <span class="apidocSignatureSpan">bower.commands.</span>info
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.info.line">
+            function <span class="apidocSignatureSpan">bower.commands.info.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.init">module bower.commands.init</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.init.init">
+            function <span class="apidocSignatureSpan">bower.commands.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.init.line">
+            function <span class="apidocSignatureSpan">bower.commands.init.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.install">module bower.commands.install</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.install.install">
+            function <span class="apidocSignatureSpan">bower.commands.</span>install
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.install.line">
+            function <span class="apidocSignatureSpan">bower.commands.install.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.link">module bower.commands.link</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.link.link">
+            function <span class="apidocSignatureSpan">bower.commands.</span>link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.link.line">
+            function <span class="apidocSignatureSpan">bower.commands.link.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.list">module bower.commands.list</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.list.list">
+            function <span class="apidocSignatureSpan">bower.commands.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.list.line">
+            function <span class="apidocSignatureSpan">bower.commands.list.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.login">module bower.commands.login</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.login.login">
+            function <span class="apidocSignatureSpan">bower.commands.</span>login
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.login.line">
+            function <span class="apidocSignatureSpan">bower.commands.login.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.lookup">module bower.commands.lookup</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.lookup.lookup">
+            function <span class="apidocSignatureSpan">bower.commands.</span>lookup
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.lookup.line">
+            function <span class="apidocSignatureSpan">bower.commands.lookup.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.prune">module bower.commands.prune</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.prune.prune">
+            function <span class="apidocSignatureSpan">bower.commands.</span>prune
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.prune.line">
+            function <span class="apidocSignatureSpan">bower.commands.prune.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.register">module bower.commands.register</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.register.register">
+            function <span class="apidocSignatureSpan">bower.commands.</span>register
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.register.line">
+            function <span class="apidocSignatureSpan">bower.commands.register.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.search">module bower.commands.search</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.search.search">
+            function <span class="apidocSignatureSpan">bower.commands.</span>search
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.search.line">
+            function <span class="apidocSignatureSpan">bower.commands.search.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.uninstall">module bower.commands.uninstall</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.uninstall.uninstall">
+            function <span class="apidocSignatureSpan">bower.commands.</span>uninstall
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.uninstall.line">
+            function <span class="apidocSignatureSpan">bower.commands.uninstall.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.unregister">module bower.commands.unregister</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.unregister.unregister">
+            function <span class="apidocSignatureSpan">bower.commands.</span>unregister
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.unregister.line">
+            function <span class="apidocSignatureSpan">bower.commands.unregister.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.update">module bower.commands.update</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.update.update">
+            function <span class="apidocSignatureSpan">bower.commands.</span>update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.update.line">
+            function <span class="apidocSignatureSpan">bower.commands.update.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.commands.version">module bower.commands.version</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.version.version">
+            function <span class="apidocSignatureSpan">bower.commands.</span>version
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.commands.version.line">
+            function <span class="apidocSignatureSpan">bower.commands.version.</span>line
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.config">module bower.config</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.config.config">
+            function <span class="apidocSignatureSpan">bower.</span>config
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.config.reset">
+            function <span class="apidocSignatureSpan">bower.config.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.config.restore">
+            function <span class="apidocSignatureSpan">bower.config.</span>restore
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower.renderers">module bower.renderers</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.renderers.Json">
+            function <span class="apidocSignatureSpan">bower.renderers.</span>Json
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.bower.renderers.Standard">
+            function <span class="apidocSignatureSpan">bower.renderers.</span>Standard
+            <span class="apidocSignatureSpan">(command, config)</span>
+            </a>
+            
+        </li>
+        
+    </ol></li>
+    
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower" id="apidoc.module.bower">module bower</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.help" id="apidoc.element.bower.commands.help">
+        function <span class="apidocSignatureSpan">bower.</span>commands.help
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.home" id="apidoc.element.bower.commands.home">
+        function <span class="apidocSignatureSpan">bower.</span>commands.home
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.info" id="apidoc.element.bower.commands.info">
+        function <span class="apidocSignatureSpan">bower.</span>commands.info
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.init" id="apidoc.element.bower.commands.init">
+        function <span class="apidocSignatureSpan">bower.</span>commands.init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.install" id="apidoc.element.bower.commands.install">
+        function <span class="apidocSignatureSpan">bower.</span>commands.install
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.link" id="apidoc.element.bower.commands.link">
+        function <span class="apidocSignatureSpan">bower.</span>commands.link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.list" id="apidoc.element.bower.commands.list">
+        function <span class="apidocSignatureSpan">bower.</span>commands.list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.login" id="apidoc.element.bower.commands.login">
+        function <span class="apidocSignatureSpan">bower.</span>commands.login
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.lookup" id="apidoc.element.bower.commands.lookup">
+        function <span class="apidocSignatureSpan">bower.</span>commands.lookup
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.prune" id="apidoc.element.bower.commands.prune">
+        function <span class="apidocSignatureSpan">bower.</span>commands.prune
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.register" id="apidoc.element.bower.commands.register">
+        function <span class="apidocSignatureSpan">bower.</span>commands.register
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.search" id="apidoc.element.bower.commands.search">
+        function <span class="apidocSignatureSpan">bower.</span>commands.search
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.uninstall" id="apidoc.element.bower.commands.uninstall">
+        function <span class="apidocSignatureSpan">bower.</span>commands.uninstall
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.unregister" id="apidoc.element.bower.commands.unregister">
+        function <span class="apidocSignatureSpan">bower.</span>commands.unregister
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.update" id="apidoc.element.bower.commands.update">
+        function <span class="apidocSignatureSpan">bower.</span>commands.update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.version" id="apidoc.element.bower.commands.version">
+        function <span class="apidocSignatureSpan">bower.</span>commands.version
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.reset" id="apidoc.element.bower.reset">
+        function <span class="apidocSignatureSpan">bower.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clearRuntimeCache() {
+    // Note that in edge cases, some architecture components instance&#x27;s
+    // in-memory cache might be skipped.
+    // If that&#x27;s a problem, you should create and fresh instances instead.
+    var PackageRepository = require(&#x27;./core/PackageRepository&#x27;);
+    PackageRepository.clearRuntimeCache();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands" id="apidoc.module.bower.commands">module bower.commands</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.help" id="apidoc.element.bower.commands.help">
+        function <span class="apidocSignatureSpan">bower.commands.</span>help
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.home" id="apidoc.element.bower.commands.home">
+        function <span class="apidocSignatureSpan">bower.commands.</span>home
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.info" id="apidoc.element.bower.commands.info">
+        function <span class="apidocSignatureSpan">bower.commands.</span>info
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.init" id="apidoc.element.bower.commands.init">
+        function <span class="apidocSignatureSpan">bower.commands.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.install" id="apidoc.element.bower.commands.install">
+        function <span class="apidocSignatureSpan">bower.commands.</span>install
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.link" id="apidoc.element.bower.commands.link">
+        function <span class="apidocSignatureSpan">bower.commands.</span>link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.list" id="apidoc.element.bower.commands.list">
+        function <span class="apidocSignatureSpan">bower.commands.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.login" id="apidoc.element.bower.commands.login">
+        function <span class="apidocSignatureSpan">bower.commands.</span>login
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.lookup" id="apidoc.element.bower.commands.lookup">
+        function <span class="apidocSignatureSpan">bower.commands.</span>lookup
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.prune" id="apidoc.element.bower.commands.prune">
+        function <span class="apidocSignatureSpan">bower.commands.</span>prune
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.register" id="apidoc.element.bower.commands.register">
+        function <span class="apidocSignatureSpan">bower.commands.</span>register
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.search" id="apidoc.element.bower.commands.search">
+        function <span class="apidocSignatureSpan">bower.commands.</span>search
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.uninstall" id="apidoc.element.bower.commands.uninstall">
+        function <span class="apidocSignatureSpan">bower.commands.</span>uninstall
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.unregister" id="apidoc.element.bower.commands.unregister">
+        function <span class="apidocSignatureSpan">bower.commands.</span>unregister
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.update" id="apidoc.element.bower.commands.update">
+        function <span class="apidocSignatureSpan">bower.commands.</span>update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.version" id="apidoc.element.bower.commands.version">
+        function <span class="apidocSignatureSpan">bower.commands.</span>version
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.cache" id="apidoc.module.bower.commands.cache">module bower.commands.cache</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.cache.clean" id="apidoc.element.bower.commands.cache.clean">
+        function <span class="apidocSignatureSpan">bower.commands.cache.</span>clean
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.cache.list" id="apidoc.element.bower.commands.cache.list">
+        function <span class="apidocSignatureSpan">bower.commands.cache.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.help" id="apidoc.module.bower.commands.help">module bower.commands.help</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.help.help" id="apidoc.element.bower.commands.help.help">
+        function <span class="apidocSignatureSpan">bower.commands.</span>help
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.help.line" id="apidoc.element.bower.commands.help.line">
+        function <span class="apidocSignatureSpan">bower.commands.help.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.home" id="apidoc.module.bower.commands.home">module bower.commands.home</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.home.home" id="apidoc.element.bower.commands.home.home">
+        function <span class="apidocSignatureSpan">bower.commands.</span>home
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.home.line" id="apidoc.element.bower.commands.home.line">
+        function <span class="apidocSignatureSpan">bower.commands.home.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.info" id="apidoc.module.bower.commands.info">module bower.commands.info</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.info.info" id="apidoc.element.bower.commands.info.info">
+        function <span class="apidocSignatureSpan">bower.commands.</span>info
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.info.line" id="apidoc.element.bower.commands.info.line">
+        function <span class="apidocSignatureSpan">bower.commands.info.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.init" id="apidoc.module.bower.commands.init">module bower.commands.init</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.init.init" id="apidoc.element.bower.commands.init.init">
+        function <span class="apidocSignatureSpan">bower.commands.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.init.line" id="apidoc.element.bower.commands.init.line">
+        function <span class="apidocSignatureSpan">bower.commands.init.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.install" id="apidoc.module.bower.commands.install">module bower.commands.install</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.install.install" id="apidoc.element.bower.commands.install.install">
+        function <span class="apidocSignatureSpan">bower.commands.</span>install
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.install.line" id="apidoc.element.bower.commands.install.line">
+        function <span class="apidocSignatureSpan">bower.commands.install.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.link" id="apidoc.module.bower.commands.link">module bower.commands.link</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.link.link" id="apidoc.element.bower.commands.link.link">
+        function <span class="apidocSignatureSpan">bower.commands.</span>link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.link.line" id="apidoc.element.bower.commands.link.line">
+        function <span class="apidocSignatureSpan">bower.commands.link.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.list" id="apidoc.module.bower.commands.list">module bower.commands.list</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.list.list" id="apidoc.element.bower.commands.list.list">
+        function <span class="apidocSignatureSpan">bower.commands.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.list.line" id="apidoc.element.bower.commands.list.line">
+        function <span class="apidocSignatureSpan">bower.commands.list.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.login" id="apidoc.module.bower.commands.login">module bower.commands.login</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.login.login" id="apidoc.element.bower.commands.login.login">
+        function <span class="apidocSignatureSpan">bower.commands.</span>login
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.login.line" id="apidoc.element.bower.commands.login.line">
+        function <span class="apidocSignatureSpan">bower.commands.login.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.lookup" id="apidoc.module.bower.commands.lookup">module bower.commands.lookup</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.lookup.lookup" id="apidoc.element.bower.commands.lookup.lookup">
+        function <span class="apidocSignatureSpan">bower.commands.</span>lookup
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.lookup.line" id="apidoc.element.bower.commands.lookup.line">
+        function <span class="apidocSignatureSpan">bower.commands.lookup.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.prune" id="apidoc.module.bower.commands.prune">module bower.commands.prune</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.prune.prune" id="apidoc.element.bower.commands.prune.prune">
+        function <span class="apidocSignatureSpan">bower.commands.</span>prune
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.prune.line" id="apidoc.element.bower.commands.prune.line">
+        function <span class="apidocSignatureSpan">bower.commands.prune.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.register" id="apidoc.module.bower.commands.register">module bower.commands.register</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.register.register" id="apidoc.element.bower.commands.register.register">
+        function <span class="apidocSignatureSpan">bower.commands.</span>register
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.register.line" id="apidoc.element.bower.commands.register.line">
+        function <span class="apidocSignatureSpan">bower.commands.register.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.search" id="apidoc.module.bower.commands.search">module bower.commands.search</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.search.search" id="apidoc.element.bower.commands.search.search">
+        function <span class="apidocSignatureSpan">bower.commands.</span>search
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.search.line" id="apidoc.element.bower.commands.search.line">
+        function <span class="apidocSignatureSpan">bower.commands.search.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.uninstall" id="apidoc.module.bower.commands.uninstall">module bower.commands.uninstall</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.uninstall.uninstall" id="apidoc.element.bower.commands.uninstall.uninstall">
+        function <span class="apidocSignatureSpan">bower.commands.</span>uninstall
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.uninstall.line" id="apidoc.element.bower.commands.uninstall.line">
+        function <span class="apidocSignatureSpan">bower.commands.uninstall.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.unregister" id="apidoc.module.bower.commands.unregister">module bower.commands.unregister</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.unregister.unregister" id="apidoc.element.bower.commands.unregister.unregister">
+        function <span class="apidocSignatureSpan">bower.commands.</span>unregister
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.unregister.line" id="apidoc.element.bower.commands.unregister.line">
+        function <span class="apidocSignatureSpan">bower.commands.unregister.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.update" id="apidoc.module.bower.commands.update">module bower.commands.update</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.update.update" id="apidoc.element.bower.commands.update.update">
+        function <span class="apidocSignatureSpan">bower.commands.</span>update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.update.line" id="apidoc.element.bower.commands.update.line">
+        function <span class="apidocSignatureSpan">bower.commands.update.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.commands.version" id="apidoc.module.bower.commands.version">module bower.commands.version</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.version.version" id="apidoc.element.bower.commands.version.version">
+        function <span class="apidocSignatureSpan">bower.commands.</span>version
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runApi() {
+    var command = require(id);
+    var commandArgs = [].slice.call(arguments);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.commands.version.line" id="apidoc.element.bower.commands.version.line">
+        function <span class="apidocSignatureSpan">bower.commands.version.</span>line
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runFromArgv(argv) {
+    var commandArgs;
+    var command = require(id);
+
+    commandArgs = command.readOptions(argv);
+
+    return withLogger(function (logger) {
+        commandArgs.unshift(logger);
+
+        return command.apply(undefined, commandArgs);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.config" id="apidoc.module.bower.config">module bower.config</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.config.config" id="apidoc.element.bower.config.config">
+        function <span class="apidocSignatureSpan">bower.</span>config
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultConfig(config) {
+    config = config || {};
+
+    return readCachedConfig(config.cwd || process.cwd(), config);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.config.reset" id="apidoc.element.bower.config.reset">
+        function <span class="apidocSignatureSpan">bower.config.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetCache() {
+    restoreConfig();
+    current = undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.config.restore" id="apidoc.element.bower.config.restore">
+        function <span class="apidocSignatureSpan">bower.config.</span>restore
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function restoreConfig() {
+    if (current) {
+        current.restore();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+
+    return config;
+}
+
+function restoreConfig() {
+    if (current) {
+        current.<span class="apidocCodeKeywordSpan">restore</span>();
+    }
+}
+
+function resetCache() {
+    restoreConfig();
+    current = undefined;
+}
+...</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower.renderers" id="apidoc.module.bower.renderers">module bower.renderers</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.renderers.Json" id="apidoc.element.bower.renderers.Json">
+        function <span class="apidocSignatureSpan">bower.renderers.</span>Json
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function JsonRenderer() {
+    this._nrLogs = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.bower.renderers.Standard" id="apidoc.element.bower.renderers.Standard">
+        function <span class="apidocSignatureSpan">bower.renderers.</span>Standard
+        <span class="apidocSignatureSpan">(command, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StandardRenderer(command, config) {
+    this._sizes = {
+        id: 13,    // Id max chars
+        label: 20, // Label max chars
+        sumup: 5   // Amount to sum when the label exceeds
+    };
+    this._colors = {
+        warn: chalk.yellow,
+        error: chalk.red,
+        conflict: chalk.magenta,
+        debug: chalk.gray,
+        default: chalk.cyan
+    };
+
+    this._command = command;
+    this._config = config || {};
+
+    if (this.constructor._wideCommands.indexOf(command) === -1) {
+        this._compact = true;
+    } else {
+        this._compact = process.stdout.columns &#x3c; 120;
+    }
+
+    var exitOnPipeError = function (err) {
+        if (err.code === &#x27;EPIPE&#x27;) {
+            process.exit(0);
+        }
+    };
+
+    // It happens when piping command to &#x22;head&#x22; util
+    process.stdout.on(&#x27;error&#x27;, exitOnPipeError);
+    process.stderr.on(&#x27;error&#x27;, exitOnPipeError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
