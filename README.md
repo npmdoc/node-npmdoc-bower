@@ -1,11 +1,13 @@
-# api documentation for  [bower (v1.8.0)](http://bower.io)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-bower.svg)](https://travis-ci.org/npmdoc/node-npmdoc-bower)
+# api documentation for  [bower (v1.8.0)](http://bower.io)  [![npm package](https://img.shields.io/npm/v/npmdoc-bower.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-bower) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-bower.svg)](https://travis-ci.org/npmdoc/node-npmdoc-bower)
 #### The browser package manager
 
 [![NPM](https://nodei.co/npm/bower.png?downloads=true)](https://www.npmjs.com/package/bower)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-bower/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-bower_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-bower/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-bower/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-bower_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-bower/build..beta..travis-ci.org/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-bower/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-bower/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-bower/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -112,7 +114,6 @@
 1.  object <span class="apidocSignatureSpan">bower.</span>commands
 1.  object <span class="apidocSignatureSpan">bower.</span>commands.cache
 1.  object <span class="apidocSignatureSpan">bower.</span>config
-1.  object <span class="apidocSignatureSpan">bower.</span>renderers
 1.  string <span class="apidocSignatureSpan">bower.</span>version
 
 #### [module bower.commands](#apidoc.module.bower.commands)
@@ -201,15 +202,6 @@
 #### [module bower.commands.version](#apidoc.module.bower.commands.version)
 1.  [function <span class="apidocSignatureSpan">bower.commands.</span>version ()](#apidoc.element.bower.commands.version.version)
 1.  [function <span class="apidocSignatureSpan">bower.commands.version.</span>line (argv)](#apidoc.element.bower.commands.version.line)
-
-#### [module bower.config](#apidoc.module.bower.config)
-1.  [function <span class="apidocSignatureSpan">bower.</span>config (config)](#apidoc.element.bower.config.config)
-1.  [function <span class="apidocSignatureSpan">bower.config.</span>reset ()](#apidoc.element.bower.config.reset)
-1.  [function <span class="apidocSignatureSpan">bower.config.</span>restore ()](#apidoc.element.bower.config.restore)
-
-#### [module bower.renderers](#apidoc.module.bower.renderers)
-1.  [function <span class="apidocSignatureSpan">bower.renderers.</span>Json ()](#apidoc.element.bower.renderers.Json)
-1.  [function <span class="apidocSignatureSpan">bower.renderers.</span>Standard (command, config)](#apidoc.element.bower.renderers.Standard)
 
 
 
@@ -1582,125 +1574,6 @@ function runFromArgv(argv) {
 
         return command.apply(undefined, commandArgs);
     });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.bower.config"></a>[module bower.config](#apidoc.module.bower.config)
-
-#### <a name="apidoc.element.bower.config.config"></a>[function <span class="apidocSignatureSpan">bower.</span>config (config)](#apidoc.element.bower.config.config)
-- description and source-code
-```javascript
-function defaultConfig(config) {
-    config = config || {};
-
-    return readCachedConfig(config.cwd || process.cwd(), config);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.bower.config.reset"></a>[function <span class="apidocSignatureSpan">bower.config.</span>reset ()](#apidoc.element.bower.config.reset)
-- description and source-code
-```javascript
-function resetCache() {
-    restoreConfig();
-    current = undefined;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.bower.config.restore"></a>[function <span class="apidocSignatureSpan">bower.config.</span>restore ()](#apidoc.element.bower.config.restore)
-- description and source-code
-```javascript
-function restoreConfig() {
-    if (current) {
-        current.restore();
-    }
-}
-```
-- example usage
-```shell
-...
-    }
-
-    return config;
-}
-
-function restoreConfig() {
-    if (current) {
-        current.restore();
-    }
-}
-
-function resetCache() {
-    restoreConfig();
-    current = undefined;
-}
-...
-```
-
-
-
-# <a name="apidoc.module.bower.renderers"></a>[module bower.renderers](#apidoc.module.bower.renderers)
-
-#### <a name="apidoc.element.bower.renderers.Json"></a>[function <span class="apidocSignatureSpan">bower.renderers.</span>Json ()](#apidoc.element.bower.renderers.Json)
-- description and source-code
-```javascript
-function JsonRenderer() {
-    this._nrLogs = 0;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.bower.renderers.Standard"></a>[function <span class="apidocSignatureSpan">bower.renderers.</span>Standard (command, config)](#apidoc.element.bower.renderers.Standard)
-- description and source-code
-```javascript
-function StandardRenderer(command, config) {
-    this._sizes = {
-        id: 13,    // Id max chars
-        label: 20, // Label max chars
-        sumup: 5   // Amount to sum when the label exceeds
-    };
-    this._colors = {
-        warn: chalk.yellow,
-        error: chalk.red,
-        conflict: chalk.magenta,
-        debug: chalk.gray,
-        default: chalk.cyan
-    };
-
-    this._command = command;
-    this._config = config || {};
-
-    if (this.constructor._wideCommands.indexOf(command) === -1) {
-        this._compact = true;
-    } else {
-        this._compact = process.stdout.columns < 120;
-    }
-
-    var exitOnPipeError = function (err) {
-        if (err.code === 'EPIPE') {
-            process.exit(0);
-        }
-    };
-
-    // It happens when piping command to "head" util
-    process.stdout.on('error', exitOnPipeError);
-    process.stderr.on('error', exitOnPipeError);
 }
 ```
 - example usage
