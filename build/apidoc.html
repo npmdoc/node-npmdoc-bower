@@ -240,12 +240,6 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower.</span>renderers</span>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">bower.</span>version</span>
 
         </li>
@@ -780,59 +774,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.bower.config">module bower.config</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.bower.config.config">
-            function <span class="apidocSignatureSpan">bower.</span>config
-            <span class="apidocSignatureSpan">(config)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.bower.config.reset">
-            function <span class="apidocSignatureSpan">bower.config.</span>reset
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.bower.config.restore">
-            function <span class="apidocSignatureSpan">bower.config.</span>restore
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.bower.renderers">module bower.renderers</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.bower.renderers.Json">
-            function <span class="apidocSignatureSpan">bower.renderers.</span>Json
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.bower.renderers.Standard">
-            function <span class="apidocSignatureSpan">bower.renderers.</span>Standard
-            <span class="apidocSignatureSpan">(command, config)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -1207,8 +1148,6 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-
-
 
 
 
@@ -2440,142 +2379,6 @@
 
         return command.apply(undefined, commandArgs);
     });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.bower.config" id="apidoc.module.bower.config">module bower.config</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.bower.config.config" id="apidoc.element.bower.config.config">
-        function <span class="apidocSignatureSpan">bower.</span>config
-        <span class="apidocSignatureSpan">(config)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function defaultConfig(config) {
-    config = config || {};
-
-    return readCachedConfig(config.cwd || process.cwd(), config);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.bower.config.reset" id="apidoc.element.bower.config.reset">
-        function <span class="apidocSignatureSpan">bower.config.</span>reset
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function resetCache() {
-    restoreConfig();
-    current = undefined;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.bower.config.restore" id="apidoc.element.bower.config.restore">
-        function <span class="apidocSignatureSpan">bower.config.</span>restore
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function restoreConfig() {
-    if (current) {
-        current.restore();
-    }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    }
-
-    return config;
-}
-
-function restoreConfig() {
-    if (current) {
-        current.<span class="apidocCodeKeywordSpan">restore</span>();
-    }
-}
-
-function resetCache() {
-    restoreConfig();
-    current = undefined;
-}
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.bower.renderers" id="apidoc.module.bower.renderers">module bower.renderers</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.bower.renderers.Json" id="apidoc.element.bower.renderers.Json">
-        function <span class="apidocSignatureSpan">bower.renderers.</span>Json
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function JsonRenderer() {
-    this._nrLogs = 0;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.bower.renderers.Standard" id="apidoc.element.bower.renderers.Standard">
-        function <span class="apidocSignatureSpan">bower.renderers.</span>Standard
-        <span class="apidocSignatureSpan">(command, config)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function StandardRenderer(command, config) {
-    this._sizes = {
-        id: 13,    // Id max chars
-        label: 20, // Label max chars
-        sumup: 5   // Amount to sum when the label exceeds
-    };
-    this._colors = {
-        warn: chalk.yellow,
-        error: chalk.red,
-        conflict: chalk.magenta,
-        debug: chalk.gray,
-        default: chalk.cyan
-    };
-
-    this._command = command;
-    this._config = config || {};
-
-    if (this.constructor._wideCommands.indexOf(command) === -1) {
-        this._compact = true;
-    } else {
-        this._compact = process.stdout.columns &#x3c; 120;
-    }
-
-    var exitOnPipeError = function (err) {
-        if (err.code === &#x27;EPIPE&#x27;) {
-            process.exit(0);
-        }
-    };
-
-    // It happens when piping command to &#x22;head&#x22; util
-    process.stdout.on(&#x27;error&#x27;, exitOnPipeError);
-    process.stderr.on(&#x27;error&#x27;, exitOnPipeError);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
