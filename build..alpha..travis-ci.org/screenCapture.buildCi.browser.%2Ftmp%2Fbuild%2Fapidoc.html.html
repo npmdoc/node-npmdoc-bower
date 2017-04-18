@@ -767,19 +767,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.bower.reset">module bower.reset</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.bower.reset.reset">
-            function <span class="apidocSignatureSpan">bower.</span>reset
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -2385,30 +2372,6 @@
 
         return command.apply(undefined, commandArgs);
     });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.bower.reset" id="apidoc.module.bower.reset">module bower.reset</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.bower.reset.reset" id="apidoc.element.bower.reset.reset">
-        function <span class="apidocSignatureSpan">bower.</span>reset
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function clearRuntimeCache() {
-    // Note that in edge cases, some architecture components instance's
-    // in-memory cache might be skipped.
-    // If that's a problem, you should create and fresh instances instead.
-    var PackageRepository = require('./core/PackageRepository');
-    PackageRepository.clearRuntimeCache();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
